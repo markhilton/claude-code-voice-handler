@@ -1,0 +1,24 @@
+{
+  "hook_events": {
+    "Stop": ["Task completed", "Work finished", "Request fulfilled"],
+    "UserPromptSubmit": "Ready to help",
+    "PreToolUse": "Starting operation",
+    "PostToolUse": "Operation complete"
+  },
+  "tools": {
+    "Read": "Reading file",
+    "NotebookRead": "Reading notebook",
+    "Edit": "Editing code",
+    "MultiEdit": "Editing code",
+    "Write": "Writing file",
+    "NotebookEdit": "Editing notebook",
+    "Grep": "Searching",
+    "Glob": "Finding files",
+    "LS": "Listing files",
+    "Bash": "Running command",
+    "Task": "Starting task",
+    "WebFetch": "Fetching web content",
+    "WebSearch": "Searching web",
+    "TodoWrite": ["Updating tasks", "Managing todos", "Tracking progress"]
+  }
+}

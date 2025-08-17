@@ -1,0 +1,85 @@
+{
+  "voice_settings": {
+    "tts_provider": "openai",
+    "openai_voice": "nova",
+    "openai_voices": {
+      "nova": "Natural and warm (default)",
+      "alloy": "Neutral and balanced",
+      "echo": "Smooth and articulate",
+      "fable": "Expressive British accent",
+      "onyx": "Deep and authoritative",
+      "shimmer": "Gentle and soothing"
+    },
+    "fallback_voice": "Ralph",
+    "fallback_speech_rate": 180,
+
+    "personality": "butler",
+    "user_nickname": "Mark"
+  },
+  "personality_modes": {
+    "friendly_professional": {
+      "greetings": ["Let's get started", "Ready to help", "At your service"],
+      "acknowledgments": ["Got it", "Understood", "On it", "Sure thing"],
+      "completions": ["All done", "Mission accomplished", "Task completed successfully"],
+      "thinking": ["Let me think", "Processing", "Working on it", "Analyzing"]
+    },
+    "casual": {
+      "greetings": ["Hey there", "What's up", "Ready to roll"],
+      "acknowledgments": ["You got it", "No problem", "Yep", "Sure"],
+      "completions": ["Done and done", "Finished up", "All set"],
+      "thinking": ["Hmm", "Let's see", "Checking it out"]
+    },
+    "butler": {
+      "greetings": ["How may I assist you", "At your command", "Ready to serve"],
+      "acknowledgments": ["Very well", "As you wish", "Certainly", "Of course"],
+      "completions": ["The task is complete", "I've finished as requested", "Your request has been fulfilled"],
+      "thinking": ["Allow me a moment", "I shall investigate", "Examining the matter"]
+    }
+  },
+  "task_summaries": {
+    "file_operations": {
+      "created": ["Created {count} new files", "Added {count} files to the project"],
+      "modified": ["Updated {count} files", "Made changes to {count} files"],
+      "deleted": ["Removed {count} files", "Cleaned up {count} files"],
+      "moved": ["Reorganized {count} files", "Moved {count} files"]
+    },
+    "code_changes": {
+      "refactor": ["Refactored the code", "Improved code structure"],
+      "bug_fix": ["Fixed the issue", "Bug has been resolved"],
+      "feature": ["Added new functionality", "Feature implemented"],
+      "test": ["Tests are passing", "Testing complete"]
+    }
+  },
+  "contextual_phrases": {
+    "starting_task": [
+      "Starting {task_type}",
+      "Beginning work on {task_type}",
+      "Let me handle {task_type}",
+      "Working on {task_type} now"
+    ],
+    "examining_file": [
+      "Looking at {filename}",
+      "Checking {filename}",
+      "Examining {filename}",
+      "Reading through {filename}"
+    ],
+    "making_changes": [
+      "Updating {filename}",
+      "Modifying {filename}",
+      "Making changes to {filename}",
+      "Editing {filename}"
+    ],
+    "searching": ["Searching for {query}", "Looking for {query}", "Finding {query}", "Locating {query}"],
+    "running_command": ["Running {command}", "Executing {command}", "Processing {command}"],
+    "waiting": ["Waiting for your input", "Ready when you are", "Standing by", "Awaiting instructions"],
+    "error_occurred": ["Encountered an issue", "Something went wrong", "Hit a snag", "Found a problem"]
+  },
+  "time_aware_greetings": {
+    "morning": ["Good morning", "Morning", "Early bird gets the worm"],
+    "afternoon": ["Good afternoon", "Afternoon", "Hope you're having a good day"],
+    "evening": ["Good evening", "Evening", "Working late tonight"],
+    "night": ["Burning the midnight oil", "Late night coding session", "Still going strong"]
+  },
+  "encouragements": ["Great choice", "Smart thinking", "Good idea", "That makes sense", "Excellent", "Nice work"],
+  "transition_phrases": ["Moving on to", "Next up", "Now handling", "Switching to", "Let's work on"]
+}
