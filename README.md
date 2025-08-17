@@ -80,13 +80,61 @@ Add these hooks to your Claude Code settings (`~/.claude/settings.json` or proje
 ```json
 {
   "hooks": {
-    "pre_tool_use": "bash ~/.claude/hooks/voice_notifications/run_voice_handler.sh --hook PreToolUse",
-    "post_tool_use": "bash ~/.claude/hooks/voice_notifications/run_voice_handler.sh --hook PostToolUse",
-    "stop": "bash ~/.claude/hooks/voice_notifications/run_voice_handler.sh --hook Stop",
-    "user_prompt_submit": "bash ~/.claude/hooks/voice_notifications/run_voice_handler.sh --hook UserPromptSubmit"
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run ~/.claude/hooks/voice_notifications/voice_handler.py --hook PreToolUse"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run ~/.claude/hooks/voice_notifications/voice_handler.py --hook PostToolUse"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run ~/.claude/hooks/voice_notifications/voice_handler.py --hook Stop"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run ~/.claude/hooks/voice_notifications/voice_handler.py --hook UserPromptSubmit"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run ~/.claude/hooks/voice_notifications/voice_handler.py --hook Notification"
+          }
+        ]
+      }
+    ]
   }
 }
 ```
+
+**Note**: The hook names are case-sensitive. Additional hooks like `SessionStart`, `SubagentStop`, and `PreCompact` can be added following the same pattern if desired.
 
 ## Configuration
 
@@ -198,10 +246,9 @@ voice_notifications/
 ├── state_manager.py       # Manages persistent state and task context tracking
 ├── logger.py              # Centralized logging system for debugging
 ├── deduplication.py       # Prevents duplicate announcements
+├── speech_lock.py         # Inter-process lock for preventing overlapping speech
 ├── config.json            # Voice settings, personality modes, and phrases
 ├── sound_mapping.json     # Tool-to-announcement mappings
-├── run_voice_handler.sh   # Shell wrapper with uv auto-setup
-├── pyproject.toml         # Project dependencies for uv
 ├── README.md              # This documentation
 └── LICENSE                # MIT license
 ```
