@@ -1,12 +1,12 @@
-# Claude Code Voice Handler - Real-Time AI Voice Notifications for Claude Desktop
+# Claude Code Voice Handler - Real-Time AI Voice Notifications for Claude Code
 
-Transform your Claude Desktop coding experience with natural voice announcements! This sophisticated voice notification system provides real-time, context-aware speech output for Claude Code's actions and responses. Perfect for developers who want audio feedback while coding with Claude AI.
+Transform your Claude Code experience with natural voice announcements! This sophisticated voice notification system provides real-time, context-aware speech output for Claude Code's actions and responses. Perfect for developers who want audio feedback while coding with Claude AI.
 
-**Keywords**: Claude Code voice integration, Claude Desktop TTS, AI coding assistant voice notifications, Claude API voice output, text-to-speech for Claude, Claude Desktop hooks, AI pair programming voice
+**Keywords**: Claude Code voice integration, Claude Code TTS, AI coding assistant voice notifications, Claude API voice output, text-to-speech for Claude, Claude Code hooks, AI pair programming voice
 
 ## Why Use Voice Notifications with Claude Code?
 
-Voice notifications enhance your Claude Desktop workflow by:
+Voice notifications enhance your Claude Code workflow by:
 
 - **Staying in the zone** - No need to watch the screen while Claude works
 - **Multi-tasking** - Listen to Claude's progress while reviewing other code
@@ -68,7 +68,7 @@ That's it! The system auto-configures on first run. See detailed installation be
 Clone the repository directly into your Claude Code hooks directory:
 
 ```bash
-git clone https://github.com/yourusername/claude-code-voice-handler ~/.claude/hooks/voice_notifications
+git clone https://github.com/markhilton/claude-code-voice-handler ~/.claude/hooks/voice_notifications
 ```
 
 **That's it!** No additional setup required. The `uv` package manager will automatically handle all dependencies on first run.
@@ -500,7 +500,7 @@ The deduplication system prevents repeated announcements:
 
 ## Compatibility
 
-- **Claude Desktop**: Fully compatible with Claude Code hooks system
+- **Claude Code**: Fully compatible with Claude Code hooks system
 - **Operating Systems**: macOS, Linux, Windows
 - **Python**: 3.8+ (managed automatically by uv)
 - **Claude Code Version**: Works with all versions supporting hooks
@@ -514,16 +514,16 @@ The deduplication system prevents repeated announcements:
 
 ## Community & Support
 
-- **Issues**: [Report bugs or request features](https://github.com/yourusername/claude-code-voice-handler/issues)
+- **Issues**: [Report bugs or request features](https://github.com/markhilton/claude-code-voice-handler/issues)
 - **Discussions**: Share your voice configurations and personality modes
 - **Pull Requests**: Contributions welcome!
 
 ## Related Projects
 
-Looking for more Claude Desktop enhancements? Check out:
+Looking for more Claude Code enhancements? Check out:
 
 - [Claude Code Extensions](https://github.com/anthropics/claude-code)
-- [Claude Desktop Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
 
 ## Contributing
 
